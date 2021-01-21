@@ -1,0 +1,29 @@
+<html>
+  <h1>
+    Joshua's dev profile
+  </h1>
+  <h2>
+    <li>  
+    Age: 23
+    Major:CIS
+    Grad year: 2021, at least I hope so.
+    Favorite team: The Atlanta Hawks #TrueToAtlanta
+    Favorite IDE: N/A. Notepad++ seems the most simple but also seems limited. I'm playing around with Visual Studio a bit at the moment.
+    GitHub: <a href="https://github.com/JMitch55"</a>
+    </li>
+  </h2>
+  <h3>
+    5 things from class
+  </h3>
+  <li>
+    Github: provider of Internet hosting for software development and version control using Git
+    Repository: Contains files and their revision history
+    Git: A version control system that helps devs keep track of file changes
+    fork: Where you kinda clone someone else's project to add onto
+    scrumbie: password for things
+  
+  </li>
+  <p>
+    
+  </p>
+</html>
