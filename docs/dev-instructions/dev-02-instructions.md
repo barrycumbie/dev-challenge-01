@@ -1,4 +1,4 @@
-# dev-challenge-02 (5pts) 
+# dev-challenge-02 (5 points) 
 
 ### Contribute to a Repo, Again. 
 
