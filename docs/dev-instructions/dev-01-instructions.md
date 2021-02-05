@@ -1,4 +1,4 @@
-# dev-challenge-01
+# dev-challenge-01 (10 points)
 
 ### Contribute to a Repo
 
