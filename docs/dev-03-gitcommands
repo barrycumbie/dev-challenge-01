@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Git Commands</title>
+</head>
+
+<body>
+    <h1>Git Commands</h1>
+
+    <h3>First Few</h3>
+
+    <p>Commands to get you started.</p>
+    <ul>
+        <li>git config: get and set repo or global options</li>
+        <li>git clone: clone a repo into a new directory</li>
+        <li>git init: create empty git repo</li>
+    </ul>
+
+    <hr>
+
+    <h3>Next Few</h3>
+    <p>Commands to do things.</p>
+    <ul>
+        <li>git add: add file contents to the index</li>
+        <li>git status: show the working tree status</li>
+        <li>git commit: record changes to the repo</li>
+    </ul>
+    </li>
+
+    <hr>
+
+    <h3>Last Few</h3>
+    <p>Commands to update and share.</p>
+    <ul>
+        <li>git pull: fetch from and integrate with another repo or a local branch</li>
+        <li>git push: update remote refs along with associated objects</li>
+    </ul>
+    </li>
+</body>
+
+</html>
