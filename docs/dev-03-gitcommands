@@ -27,7 +27,6 @@
         <li>git status: show the working tree status</li>
         <li>git commit: record changes to the repo</li>
     </ul>
-    </li>
 
     <hr>
 
@@ -37,7 +36,6 @@
         <li>git pull: fetch from and integrate with another repo or a local branch</li>
         <li>git push: update remote refs along with associated objects</li>
     </ul>
-    </li>
 </body>
 
 </html>
