@@ -1,0 +1,144 @@
+body  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #f9f9f9;
+  font-family: inconsolate, monospace;
+}
+
+#header {
+  padding: 0px; margin: 0px;
+  height: 30px;
+  width: 100%;
+  background-color: red;
+  color: 	#960f0f;
+  text-align: right;
+  position: fixed;
+  top: 0px; left: 0px;
+  z-index: 1;
+}
+
+img {
+  width: 250px;
+  height: 300px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+
+img {
+  border-radius: 16px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 250px;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #E3FB0C;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#bigbox {
+	width: 800px;
+	height: 350px;
+	background-color: black;
+	padding-top: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.container {
+	flex-direction: row | row-reverse | column | column-reverse;
+}
+
+#layout1 {
+	height: 300px;
+	width: 250px;
+	background-color: red;
+	float: left;
+	color: white;
+}
+
+#layout2 {
+	height: 300px;
+	width: 250px;
+	background-color: blue;
+	float: left;
+	margin-left: 25px;
+	color: white;
+}
+
+#layout3 {
+	height: 300px;
+	width: 250px;
+	background-color: green;
+	float: right;
+	color: white;
+}
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
