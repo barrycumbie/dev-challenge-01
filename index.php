@@ -39,7 +39,7 @@
         <p class="lead">All things CODE at <a href="https://www.una.edu" target="_blank">UNA</a> </p>
         <p class="lead">
           <a target="_blank" href="docs/index.html" class="btn btn-lg btn-secondary">UNA's BEST DEVELOPERS</a>
-          <a target="_blank" href="pages/dev-challenges.html" class="btn btn-lg btn-secondary">DEV CHALLENGES</a>
+          <a target="_blank" href="docs/dev-challenges.html" class="btn btn-lg btn-secondary">DEV CHALLENGES</a>
         </p>
       </main>
 
