@@ -40,6 +40,9 @@
         <p class="lead">
           <a target="_blank" href="docs/index.html" class="btn btn-lg btn-secondary">UNA's BEST DEVELOPERS</a>
           <a target="_blank" href="docs/dev-challenges.html" class="btn btn-lg btn-secondary">DEV CHALLENGES</a>
+          <a target="_blank" href="docs/course-content/" class="btn btn-lg btn-secondary">DEV CONTENT</a>
+          <a target="_blank" href="#" class="btn btn-lg btn-secondary">ETHICAL HACKING</a>
+          <a target="_blank" href="#" class="btn btn-lg btn-secondary">PARKING</a>
         </p>
       </main>
 
