@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>code club</title>
+    <title>una code shop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
 
@@ -26,7 +26,7 @@
           <h3 class="masthead-brand">barrycumbie.com</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="https://www.una.edu/computing">una computing</a>
+            <a class="nav-link" target="_blank" href="https://www.una.edu/computing">una computing</a>
           
             <!-- <a class="nav-link" href="#">Features</a>
             <a class="nav-link" href="#">Contact</a> -->
@@ -35,7 +35,7 @@
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">CODE CLUB.</h1>
+        <h1 class="cover-heading">UNA CODE CLUB.</h1>
         <p class="lead">All things CODE at <a href="https://www.una.edu" target="_blank">UNA</a> </p>
         <p class="lead">
           <a target="_blank" href="docs/index.html" class="btn btn-lg btn-secondary">UNA's BEST DEVELOPERS</a>
