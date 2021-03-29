@@ -4,23 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+    <style>
+      .page-title {
+        background-image: url("../lib/img/una-bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .page-title h1 {
+        color: white;
+        text-align: center;
+        padding: 50px;
+        margin: 0;
+      }
+
+      .navbar {
+        background-color: purple;
+        padding: 20px;
+      }
+
+      .navbar-light .navbar-toggler{
+        color: white;
+        border-color: white;
+      }
+
+      .navbar-light .nav-tab .nav-link {
+        color: white;
+        font-size: 20px;
+        margin-left: 50px;
+      }
+
+      .navbar-light .nav-tab a:hover {
+        background-color: orange;
+      }
+
+      .main-content {
+        margin-top: 30px;
+      }
+
+    </style>
     <title>Project 486</title>
   </head>
   <body>
-    <div>
-      <h3>CIS 486 Dev-Profiles</h3>
-    </div>
-    <div>
-      <nav>
-        Home About
-      </nav>
-    </div>
-    <div>
-      This is for the list of dev-profiles 
+    <div class="container-fluid">
+      <div class="page-title">
+        <h1>CIS 486 Dev-Profiles</h1>
+      </div>
+      
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <img src="https://www.una.edu/images/xuna-logo-main.png.pagespeed.ic.NzIllw-Ojp.png">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <!-- Nav tabs -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav nav-tab">
+              <li class="nav-item">
+                <a class="nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="container main-content">
+        <!-- Tab panes -->
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <h2>Home Page</h2>
+            <p>This is where the list of dev profiles appear</p>
+          </div>
+          <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+            <h2>About Page</h2>
+            <p>The details from project 486 of Spring 2021 go here</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </body>
+  <!-- JQuery, Popper JS and JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
