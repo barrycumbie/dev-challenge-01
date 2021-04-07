@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<!--
+The code and css that involve the css, title, and Nav bar were created by 
+@cescobar3124 and @reidhoman.
+-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<title>CIS 486</title>
+<title>CIS 486 Course Content</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -50,28 +55,27 @@ body {
   background-color: #ddd;
   color: black;
 }
-
-  h2 {
-    font-family: sans-serif;
-    font-size: 64px;
-    color: #CCC;
-    padding: 5px;
-    margin: 5px;
+h2 {
+  font-family: sans-serif;
+  font-size: 64px;
+  color: #1abc9c;
+  padding: 5px;
+  margin: 5px;
+}
+ul {
+  padding: 0;
+  margin: 10px;
   }
-  ul {
-    padding: 0;
-    margin: 10px;
-  }
-  li {
-    font-family: sans-serif;
-    background-color:gold;
-    float: left;
-    clear: both;
-    padding: 5px;
-    list-style-type: none;
-    margin: 10px;
-    border-radius: 5px;
-  }
+li {
+  font-family: sans-serif;
+  background-color:#FFFF99;
+  float: left;
+  clear: both;
+  padding: 10px;
+  list-style-type: none;
+  margin: 10px;
+  border-radius: 10px;
+}
   
 </style>
 </head>
@@ -84,10 +88,12 @@ body {
 
   <div class="navbar">
     <a href="index.html">Home Page</a>
-    <a href="#">Dev Instructions</a>
-    <a href="#">Dev Profiles</a>
-    <a href="#">Cumbie's memes</a>
+    <a href="dev-instructions.html">Dev Instructions</a>
+    <a href="dev-profiles.html">Dev Profiles</a>
+    <a href="cumbies-memes.html">Cumbie's memes</a>
   </div>
+  
+<!-- The css code h2, ul, li and from here down was created by @josephalsup -->
 
   <h2>Course Content Links</h2>
    <ul id="clickable">
@@ -95,44 +101,52 @@ body {
    </ul>
   
   <script>
-var links = [
-   'course-content/agile.html',
-   'course-content/agile-manifesto.html',
-   'course-content/agilemethodologyfixed.html',
-   'course-content/attendence.html',
-   'course-content/base64.html',
-   'course-content/cli-commands.html',
-   'course-content/course-info.html',
-   'course-content/course-objectives.html',
-   'course-content/dev-03-gitcommands.html',
-   'course-content/exam-and-assignments.html',
-   'course-content/extreme-programming.html',
-   'course-content/frinkiac.html',
-   'course-content/gitKraken.html',
-   'course-content/markdownSyntax.html',
-   'course-content/nano.html',
-   'course-content/Nu-Checker.html',
-   'course-content/pull-request-advice.html',
-   'course-content/scrum.html',
-   'course-content/SDLC.html',
-   'course-content/web-dev-DSDM.html',
-   'course-content/whoIsStrongbad.html'
-];
+    /*
+      To add more links to the list you can simply add another string value
+      to the array below.
+      Add a comma after the last item in the array and following the format
+      of the other string in the array and add the new file to the end.
+      Doing that will automatically add the new item to the list on the page.
+ 
+    */
+    var links = [
+      'course-content/agile.html',
+      'course-content/agile-manifesto.html',
+      'course-content/agilemethodologyfixed.html',
+      'course-content/attendence.html',
+      'course-content/base64.html',
+      'course-content/cli-commands.html',
+      'course-content/course-info.html',
+      'course-content/course-objectives.html',
+      'course-content/dev-03-gitcommands.html',
+      'course-content/exam-and-assignments.html',
+      'course-content/extreme-programming.html',
+      'course-content/frinkiac.html',
+      'course-content/gitKraken.html',
+      'course-content/markdownSyntax.html',
+      'course-content/nano.html',
+      'course-content/Nu-Checker.html',
+      'course-content/pull-request-advice.html',
+      'course-content/scrum.html',
+      'course-content/SDLC.html',
+      'course-content/web-dev-DSDM.html',
+      'course-content/whoIsStrongbad.html'
+    ];
+    
+    var ul = document.createElement("ul");
+    var li, a, text;
+    for (var i = 0, l = links.length; i < l; ++i) {
+      li = document.createElement("li");
+      a = document.createElement("a");
+      text = document.createTextNode(links[i]);
 
-var ul = document.createElement("ul");
-var li, a, text;
-for (var i = 0, l = links.length; i < l; ++i) {
-   li = document.createElement("li");
-   a = document.createElement("a");
-   text = document.createTextNode(links[i]);
-
-   a.href = links[i];
-   a.setAttribute("class", "some-class-name");
-   a.appendChild(text);
-   li.appendChild(a);
-   ul.appendChild(li);
-}
-document.querySelector("#clickable").appendChild(ul);
+      a.href = links[i];
+      a.setAttribute("class", "some-class-name");
+      a.appendChild(text);
+      li.appendChild(a);
+      ul.appendChild(li);
+    }
+    document.querySelector("#clickable").appendChild(ul);
   </script>
 
 </body>
