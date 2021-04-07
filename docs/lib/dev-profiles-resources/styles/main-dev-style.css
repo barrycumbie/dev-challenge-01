@@ -1,0 +1,63 @@
+/* Styling for the page title */
+.page-title {
+  background-image: url("../images/una-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-title h1 {
+  color: white;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+  background-color: purple;
+  padding: 20px;
+}
+
+.navbar-light .navbar-toggler{
+  color: white;
+  border-color: white;
+}
+
+.navbar-light .nav-tab .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.navbar-light .nav-tab a:hover {
+  background-color: orange;
+}
+
+/* Styling for the main content of the page */
+.main-content {
+  margin-top: 30px;
+}
+
+/* Styling for the profile cards */
+.card {
+  background-color: purple;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  max-width: 300px;
+  margin: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: arial;
+  display: inline-block;
+  
+}
+
+.card:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 18px;
+}

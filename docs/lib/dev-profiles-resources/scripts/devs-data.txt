@@ -1,0 +1,46 @@
+{
+   "devs":[
+      {
+         "name":"Luan Nguyen",
+         "image":"../lib/dev-profiles-resources/images/lou-devpic.jpg",
+         "alt":"Luan Profile",
+         "url":"luan-dev-profile.html"
+      },
+      {
+         "name":"Benjamin Davis",
+         "image":"../lib/dev-profiles-resources/images/una-bg.jpg",
+         "alt":"Ben Profile",
+         "url":"davis-dev-profile.html"
+      },
+      {
+         "name":"Jeffery Dill",
+         "image":"../lib/dev-profiles-resources/images/gant-devpic.jpg",
+         "alt":"Gant Profile",
+         "url":"gant-dev-profile.html"
+      },
+      {
+         "name":"Andrew Estacio",
+         "image":"../lib/dev-profiles-resources/images/andrew-devpic.jpg",
+         "alt":"Andrew Profile",
+         "url":"Estacio-dev-profile.html"
+      },
+      {
+         "name":"Jarrod Humphrey",
+         "image":"../lib/dev-profiles-resources/images/una-bg.jpg",
+         "alt":"Jared Profile",
+         "url":"humphreys-dev-profile.html"
+      },
+      {
+         "name":"Michael Owen",
+         "image":"../lib/dev-profiles-resources/images/owen-devpic.jpg",
+         "alt":"Owen Profile",
+         "url":"owen-dev-profile.html"
+      },
+      {
+         "name":"Haruki Ueda",
+         "image":"../lib/dev-profiles-resources/images/haruki-devpic.jpg",
+         "alt":"Haruki Profile",
+         "url":"Haruki-dev.html"
+      }
+   ]
+}
