@@ -50,6 +50,28 @@ body {
   background-color: #ddd;
   color: black;
 }
+
+h2 {
+  font-family: sans-serif;
+  font-size: 64px;
+  color: #1abc9c;
+  padding: 5px;
+  margin: 5px;
+}
+ul {
+  padding: 0;
+  margin: 10px;
+  }
+li {
+  font-family: sans-serif;
+  background-color:#99c2ff;
+  float: left;
+  clear: both;
+  padding: 10px;
+  list-style-type: none;
+  margin: 10px;
+  border-radius: 10px;
+}
 </style>
 </head>
 <body>
@@ -66,5 +88,56 @@ body {
   <a href="course-content.html">Course Content</a>
 </div>
 
+<!-- The css code h2, ul, li and from here down was created by @josephalsup -->
+<h2>Development Challenges Links</h2>
+   <ul id="clickable">
+
+   </ul>
+  
+  <script>
+    /*
+      To add more links to the list you can simply add another string value
+      to the array below.
+      Add a comma after the last item in the array and following the format
+      of the other string in the array and add the new file to the end.
+      Doing that will automatically add the new item to the list on the page.
+ 
+    */
+    var links = [
+      'dc-card+.md',
+      'dc-code(x).md',
+      'dc-collab(x).md',
+      'dc-deploy(x).md',
+      'dc-design(x).md',
+      'dc-env(x).md',
+      'dc-full-stack.md',
+      'dc-issue.md',
+      'dc-lvl-up(x).md',
+      'dc-model(x).md',
+      'dc-mv(x).md',
+      'dc-mvc(x).md',
+      'dc-pr.md',
+      'dc-process(x).md',
+      'dc-review.md',
+      'dc-test-run.md',
+      'dc-test-write.md',
+      'dc-ux(x).md',
+    ];
+    
+    var ul = document.createElement("ul");
+    var li, a, text;
+    for (var i = 0, l = links.length; i < l; ++i) {
+      li = document.createElement("li");
+      a = document.createElement("a");
+      text = document.createTextNode(links[i]);
+
+      a.href = links[i];
+      a.setAttribute("class", "some-class-name");
+      a.appendChild(text);
+      li.appendChild(a);
+      ul.appendChild(li);
+    }
+    document.querySelector("#clickable").appendChild(ul);
+  </script>
 </body>
 </html>
