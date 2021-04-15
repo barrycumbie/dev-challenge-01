@@ -1,4 +1,12 @@
-# dev-challenge-01
+# Welcome to UNA's CIS 486's Spring 2021 Class Projects Dev Repo!
+## yes, it is still named ```dev-challenge-01``` 
+
+- Here is our class [Google Doc](https://docs.google.com/document/d/1SE1QtG0e0JnA-F4RLG0DAamuAe_Wu7CG4-3jQwyP7VM/edit)
+- And then a [Gist](https://gist.github.com/barrycumbie/5d04356d350441a65c0164dff6c54c64)
+- And another [code club](https://gist.github.com/barrycumbie/27bada07c83618efcc657572d6544c1e)
+- And a couple o' deployments [ght pages]() and [heroku/main]()
+
+# Here's all the old junk I'll leave here for a min. just in case. (Also b/c I'm a digital hoarder)
 
 Contribute to a Repo
 
