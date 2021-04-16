@@ -61,3 +61,9 @@
 .title {
   font-size: 18px;
 }
+
+/* Styling for the modal cards */
+.header-bg, .footer-bg {
+  background-color: purple;
+  color: white;
+}
