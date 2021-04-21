@@ -1,192 +1,144 @@
 {
-  "devProfiles":[
-    {
-      "name":"Luan Nguyen",
-      "imagePath":"../lib/dev-profiles-resources/images/lou-devpic.jpg",
-      "picAlt":"Luan Profile",
-      "link":"luan-dev-profile.html",
-      "modal":"luanModal",
-      "major":"Information Technology",
-      "concentration":"Software Development",
-      "email":"luannm1410@gmail.com",
-      "githubProfile":"luannguyen1410",
-      "skills":{
-        "languages":[
-          "Java",
-          "JavaScript",
-          "HTML",
-          "CSS",
-          "SQL"
-        ],
-        "frameworks":[
-          "Angular",
-          "Bootstrap",
-          "JQuery"
-        ],
-        "database":[
-          "MySQL"
-        ],
-        "position":"Front-End Development"
+    "devProfiles":[
+      {
+         "name":"Luan Nguyen",
+         "imagePath":"../lib/dev-profiles-resources/images/lou-devpic.jpg",
+         "picAlt":"Luan Profile",
+         "link":"luan-dev-profile.html",
+         "modal":"luanModal",
+	 "major": "Information Technology",
+	 "concentration": "Software Development",
+	 "email": "luannm1410@gmail.com",
+	 "githubProfile": "luannguyen1410",
+	 "skills":{
+	     "languages":["Java", "JavaScript", "HTML", "CSS", "SQL", "JQuery"],
+	     "frameworks":["Angular", "Bootstrap"],
+	     "database": ["MySQL"],
+	     "position": "Front-End Development"	   
+	 },
+	 "degree": "Bachelor of Science",
+	 "honors": "Dean's List for Exceptional Academic Achievement",
+	 "description": "Hi! I'm from Vietnam. Call me Lou!"
       },
-      "degree":"Bachelor of Science",
-      "honors":"Dean's List for Exceptional Academic Achievement",
-      "description":"Hi! I'm from Vietnam. Call me Lou!"
-    },
-    {
-      "name":"Benjamin Davis",
-      "imagePath":"../lib/dev-profiles-resources/images/ben-devpic.jpeg",
-      "picAlt":"Ben Profile",
-      "link":"davis-dev-profile.html",
-      "modal":"benModal",
-      "major": "Information Technology",
-      "concentration": "Software Development",
-      "email": "bdavis16@una.edu",
-      "githubProfile": "bendavis91",
-      "skills":{
-          "languages":[ "C++", "PHP", "Ruby", "MQL", "SQL"],
-          "frameworks":[ "Bootstrap"],
-          "database": [ "MySQL", "MongoDB"],
-          "position": "Full Stack Developer"	   
+      {
+         "name":"Benjamin Davis",
+         "imagePath":"../lib/dev-profiles-resources/images/ben-devpic.jpeg",
+         "picAlt":"Ben Profile",
+         "link":"davis-dev-profile.html",
+         "modal":"benModal",
+	 "major": "Information Technology",
+	 "concentration": "Software Development",
+	 "email": "bdavis16@una.edu",
+	 "githubProfile": "bendavis91",
+	 "skills":{
+	     "languages":[ "C++", "PHP", "Ruby", "MQL", "SQL"],
+	     "frameworks":[ "Bootstrap"],
+	     "database": [ "MySQL", "MongoDB"],
+	     "position": "Full Stack Developer"	   
+	 },
+	 "degree": "Bachelor of Science",
+	 "honors": "Dean's List for Exceptional Academic Achievement",
+	 "description": "Hey everyone I'm Benjamin Davis and this is my Dev Profile."
       },
-      "degree": "Bachelor of Science",
-      "honors": "Dean's List for Exceptional Academic Achievement",
-      "description": "Hey everyone I'm Benjamin Davis and this is my Dev Profile."
-    },
-    {
-      "name":"Jeffery Dill",
-      "imagePath":"../lib/dev-profiles-resources/images/gant-devpic.jpg",
-      "picAlt":"Gant Profile",
-      "link":"gant-dev-profile.html",
-      "modal":"gantModal",
-      "major":"",
-      "concentration":"",
-      "email":"",
-      "githubProfile":"",
-      "skills":{
-        "languages":[
-          
-        ],
-        "frameworks":[
-          
-        ],
-        "database":[
-          
-        ],
-        "position":""
+      {
+         "name":"Jeffery Dill",
+         "imagePath":"../lib/dev-profiles-resources/images/gant-devpic.jpg",
+         "picAlt":"Gant Profile",
+         "link":"gant-dev-profile.html",
+         "modal":"gantModal",
+	 "major": "Information Technology",
+	 "concentration": "Software Development",
+	 "email": "jdill@una.edu",
+	 "githubProfile": "JGantDill",
+	 "skills":{
+	     "languages":["C++", "JavaScript", "HTML", "Ruby", "PHP" ],
+	     "frameworks":[ ],
+	     "database": [ ],
+	     "position": "Undecided"	   
+	 },
+	 "degree": "Bachelor's of Science",
+	 "honors": "",
+	 "description": "Life is good because God is good!"
       },
-      "degree":"",
-      "honors":"",
-      "description":""
-    },
-    {
-      "name":"Andrew Estacio",
-      "imagePath":"../lib/dev-profiles-resources/images/andrew-devpic.jpg",
-      "picAlt":"Andrew Profile",
-      "link":"Estacio-dev-profile.html",
-      "modal":"andrewModal",
-      "major":"Computer Information Systems",
-      "concentration":"",
-      "email":"andrew.estacio98@gmail.com",
-      "githubProfile":"AndrewEstacio",
-      "skills":{
-        "languages":[
-          "Java",
-          "Python",
-          "PHP",
-          "JavaScript",
-          "HTML",
-          "CSS"
-        ],
-        "frameworks":[
-          "Bootstrap"
-        ],
-        "database":[
-          "MySQL",
-          "MongoDB"
-        ],
-        "position":"Front end development"
+      {
+         "name":"Andrew Estacio",
+         "imagePath":"../lib/dev-profiles-resources/images/andrew-devpic.jpg",
+         "picAlt":"Andrew Profile",
+         "link":"Estacio-dev-profile.html",
+         "modal":"andrewModal",
+	 "major": "Computer Information Systems",
+	 "concentration": "",
+	 "email": "andrew.estacio98@gmail.com",
+	 "githubProfile": "AndrewEstacio",
+	 "skills":{
+	     "languages":["Java", "Python", "PHP", "JavaScript", "HTML", "CSS"],
+	     "frameworks":["Bootstrap"],
+	     "database": ["MySQL", "MongoDB"],
+	     "position": "Front end development"	   
+	 },
+	 "degree": "Bachelor of Business Administration",
+	 "honors": "Deans List for Exceptional Academic Achievment",
+	 "description": "I'm Andrew and I'm from Huntsville Alabama"
       },
-      "degree":"Bachelor of Business Administration",
-      "honors":"Deans List for Exceptional Academic Achievment",
-      "description":"I'm Andrew and I'm from Huntsville Alabama"
-    },
-    {
-      "name":"Jarrod Humphrey",
-      "imagePath":"../lib/dev-profiles-resources/images/jared-devpic.jpg",
-      "picAlt":"Jared Profile",
-      "link":"humphreys-dev-profile.html",
-      "modal":"jaredModal",
-      "major":"",
-      "concentration":"",
-      "email":"",
-      "githubProfile":"",
-      "skills":{
-        "languages":[
-          
-        ],
-        "frameworks":[
-          
-        ],
-        "database":[
-          
-        ],
-        "position":""
+      {
+         "name":"Jarrod Humphrey",
+         "imagePath":"../lib/dev-profiles-resources/images/jared-devpic.jpg",
+         "picAlt":"Jared Profile",
+         "link":"humphreys-dev-profile.html",
+         "modal":"jaredModal",
+	 "major": "Information Technology",
+	 "concentration": "Cybersecurity",
+	 "email": "jhumphrey2@una.edu",
+	 "githubProfile": "jhumphrey3",
+	 "skills":{
+	     "languages":["Python"],
+	     "frameworks":["Bootstrap"],
+	     "database": [ ],
+	     "position": "Undecided"	   
+	 },
+	 "degree": "Bachelor of Science",
+	 "honors": "",
+	 "description": "Hello I'm Jarrod"
       },
-      "degree":"",
-      "honors":"",
-      "description":""
-    },
-    {
-      "name":"Michael Owen",
-      "imagePath":"../lib/dev-profiles-resources/images/owen-devpic.jpg",
-      "picAlt":"Owen Profile",
-      "link":"owen-dev-profile.html",
-      "modal":"owenModal",
-      "major":"",
-      "concentration":"",
-      "email":"",
-      "githubProfile":"",
-      "skills":{
-        "languages":[
-          
-        ],
-        "frameworks":[
-          
-        ],
-        "database":[
-          
-        ],
-        "position":""
+      {
+         "name":"Michael Owen",
+         "imagePath":"../lib/dev-profiles-resources/images/owen-devpic.jpg",
+         "picAlt":"Owen Profile",
+         "link":"owen-dev-profile.html",
+         "modal":"owenModal",
+	 "major": "",
+	 "concentration": "",
+	 "email": "",
+	 "githubProfile": "",
+	 "skills":{
+	     "languages":[ ],
+	     "frameworks":[ ],
+	     "database": [ ],
+	     "position": ""	   
+	 },
+	 "degree": "",
+	 "honors": "",
+	 "description": ""
       },
-      "degree":"",
-      "honors":"",
-      "description":""
-    },
-    {
-      "name":"Haruki Ueda",
-      "imagePath":"../lib/dev-profiles-resources/images/haruki-devpic.jpg",
-      "picAlt":"Haruki Profile",
-      "link":"Haruki-dev.html",
-      "modal":"harukiModal",
-      "major":"",
-      "concentration":"",
-      "email":"",
-      "githubProfile":"",
-      "skills":{
-        "languages":[
-          
-        ],
-        "frameworks":[
-          
-        ],
-        "database":[
-          
-        ],
-        "position":""
-      },
-      "degree":"",
-      "honors":"",
-      "description":""
-    }
-  ]
+      {
+         "name":"Haruki Ueda",
+         "imagePath":"../lib/dev-profiles-resources/images/haruki-devpic.jpg",
+         "picAlt":"Haruki Profile",
+         "link":"Haruki-dev.html",
+         "modal":"harukiModal",
+	 "major": "Computer information system",
+	 "concentration": "",
+	 "email": "hueda@una.edu",
+	 "githubProfile": "H4ruk1",
+	 "skills":{
+	     "languages":[ "Python", "JAVA", "JavaScript", "SQL"  ],
+	     "frameworks":[ ],
+	     "database": ["MongoDB" ],
+	     "position": "Undecided"	   
+	 },
+	 "degree": "Bachelor",
+	 "honors": "",
+	 "description": "I am Haruki, I am from Japan"
+      }
+   ] 
 }

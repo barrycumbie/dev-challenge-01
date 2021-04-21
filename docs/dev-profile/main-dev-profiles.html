@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../lib/dev-profiles-resources/styles/main-dev-style.css">
     <title>Project 486</title>
@@ -32,6 +33,12 @@
                 <a class="nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about">About</a>
               </li>
             </ul>
+
+            <!-- Search Bar -->
+            <div class="search-container" style="margin-left:300px;">
+              <input id="searchbar" type="text" name="search" placeholder="Search DEVS..">
+              <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+            </div>
           </div>        
         </div>
       </nav>
@@ -48,6 +55,8 @@
               <!-- Content of Profile Cards in here -->
             </div>
             
+            <!-- Refresh page button -->
+            <button id="refreshBtn">Refresh Page after Search</button>
           </div>
 
           <!-- Dev Profile Modals -->

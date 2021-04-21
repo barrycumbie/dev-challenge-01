@@ -27,6 +27,7 @@ xhttp.onreadystatechange = function() {
         var devLangs = jsonData.devProfiles[i].skills.languages.toString();
         var devDesc = jsonData.devProfiles[i].description;
         var devMajor = jsonData.devProfiles[i].major;
+
         
         // Assign html elements for profile cards
         profileCardHtml += "<a data-toggle='modal' data-target='#"+ devModal +"'>"
@@ -72,12 +73,49 @@ xhttp.onreadystatechange = function() {
                                 + "</div>"
                               + "</div>"
                             +"</div>";
+
       }
 
       // Assign the content to div
       document.querySelector("#profileList").innerHTML = profileCardHtml;
       document.querySelector("#modalList").innerHTML = profileModalHtml;
+
+      /////////////////////////////////////////
+
+      document.querySelector('#searchBtn').addEventListener('click', () => {
+        var input = document.getElementById('searchbar').value;
+        input=input.toLowerCase();
+        
+        for (i = 0; i < jsonData.devProfiles.length; i++) {
+            console.log("Input: " + input + "/ Dev Name: " + jsonData.devProfiles[i].name.toLowerCase());
+
+            if (jsonData.devProfiles[i].name.toLowerCase().includes(input)) {
+              
+              var searchedProfile = "<a data-toggle='modal' data-target='#"+ jsonData.devProfiles[i].modal +"'>"
+                                    + "<div class='card'>"
+                                      + "<img src='" + jsonData.devProfiles[i].imagePath + "' alt='" + jsonData.devProfiles[i].picAlt + "' style='width:300px;height:250px;'>"
+                                      + "<h3>" + jsonData.devProfiles[i].name + "</h3>"
+                                    + "</div>"  
+                                  + "</a>";
+
+              // Clear the main content and display the searched content only
+              document.querySelector("#profileList").innerHTML = "";
+              document.querySelector("#profileList").innerHTML += searchedProfile;
+            }
+            
+        }
+      }) 
+
+      // Refresh page function
+      document.querySelector('#refreshBtn').addEventListener('click', () => {
+        document.querySelector("#profileList").innerHTML = "";
+        document.querySelector("#profileList").innerHTML = profileCardHtml;
+      }) 
+      /////////////////////////////////////////
+
   }
 };
 xhttp.open("GET", "../lib/dev-profiles-resources/scripts/devs-data.txt", true);
 xhttp.send();
+
+
