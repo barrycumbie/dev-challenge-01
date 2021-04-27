@@ -10,12 +10,18 @@ var modalHeaderHtml = "";
 var modalBodyHtml = "";
 var modalFooterHtml = "";
 
+// Holds the content for sorting
+var temp = [];
+var sortedProfileHtml = [];
+
 xhttp.onreadystatechange = function() {
   // Check status
   if (this.readyState == 4 && this.status == 200) {
       // Convert text to JSON
       var jsonData= JSON.parse(this.responseText);
-      console.log(jsonData);
+      console.log(jsonData.devProfiles);
+
+      temp = jsonData.devProfiles;
 
       // Retrieve all devs
       for(var i = 0; i < jsonData.devProfiles.length; i++) {
@@ -29,6 +35,7 @@ xhttp.onreadystatechange = function() {
         var devMajor = jsonData.devProfiles[i].major;
 
         
+
         // Assign html elements for profile cards
         profileCardHtml += "<a data-toggle='modal' data-target='#"+ devModal +"'>"
                             + "<div class='card'>"
@@ -81,7 +88,7 @@ xhttp.onreadystatechange = function() {
       document.querySelector("#modalList").innerHTML = profileModalHtml;
 
       /////////////////////////////////////////
-
+      // This is the search function section
       document.querySelector('#searchBtn').addEventListener('click', () => {
         var input = document.getElementById('searchbar').value;
         input=input.toLowerCase();
@@ -113,9 +120,59 @@ xhttp.onreadystatechange = function() {
       }) 
       /////////////////////////////////////////
 
+      //////////////////////////////////////////////
+      // This is the sort function section
+      const sortContainer = document.getElementById('sortBtns');
+
+      sortContainer.addEventListener('click', (event) => {
+        // Empty Array
+        sortedProfileHtml = [];
+        
+        // Check id
+        if(event.target.id === "sortAlphabet"){
+          temp.sort(GetSortOrder("name"));
+        } 
+        if (event.target.id === "sortMajor"){
+          temp.sort(GetSortOrder("major"));
+        }
+        if (event.target.id === "sortGit"){
+          temp.sort(GetSortOrder("githubProfile"));
+        }
+        
+        for (var item in temp) {
+          // console.log(temp[item]);
+          var a = "<a data-toggle='modal' data-target='#"+ temp[item].modal +"'>"
+                  + "<div class='card'>"
+                    + "<img src='" + temp[item].imagePath + "' alt='" + temp[item].picAlt + "' style='width:300px;height:250px;'>"
+                    + "<h3>" + temp[item].name + "</h3>"
+                  + "</div>"  
+                + "</a>";
+
+          // Push list of profile cards into array
+          sortedProfileHtml.push(a);
+
+          document.querySelector("#profileList").innerHTML = "";
+          document.querySelector("#profileList").innerHTML += sortedProfileHtml.toString();
+        }
+
+      })
+
+      //////////////////////////////////////////////
+
   }
 };
 xhttp.open("GET", "../lib/dev-profiles-resources/scripts/devs-data.txt", true);
 xhttp.send();
 
 
+//Sort function
+function GetSortOrder(prop){
+  return function(a,b){
+     if( a[prop].toLowerCase() > b[prop].toLowerCase()){
+         return 1;
+     }else if( a[prop].toLowerCase() < b[prop].toLowerCase()){
+         return -1;
+     }
+     return 0;
+  }
+}

@@ -49,14 +49,19 @@
           <!-- Home Tab -->
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <h2>Home Page</h2>
+            <!-- This is where the sort buttons trigger the sort function -->
+            <div id="sortBtns">
+              <button id="sortAlphabet">Sort Alphabetically</button>
+              <button id="sortMajor">Sort By Major</button>
+              <button id="sortGit">Sort By Git Profile</button>
+              <!-- Refresh page button -->
+              <button id="refreshBtn">Refresh Page after Search</button>
+            </div>
 
             <!-- Dev Profile Cards -->
             <div id="profileList" class="d-flex align-content-center flex-wrap">
               <!-- Content of Profile Cards in here -->
             </div>
-            
-            <!-- Refresh page button -->
-            <button id="refreshBtn">Refresh Page after Search</button>
           </div>
 
           <!-- Dev Profile Modals -->
@@ -69,7 +74,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <!-- JQuery, Popper JS and JS -->
